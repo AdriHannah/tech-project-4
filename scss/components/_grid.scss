@@ -137,3 +137,13 @@
 .card {
     flex-basis: 100%;
 }
+
+@include media($breakpoint-desktop) {
+    .col-4 {
+        flex-basis: 33.33%;
+    }
+
+    .col-8 {
+        flex-basis: 66.67%;
+    }
+}

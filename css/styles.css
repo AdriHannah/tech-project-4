@@ -968,4 +968,33 @@ a {
   flex-basis: 100%;
 }
 
+@media (min-width: 768px) {
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+
+  .btn + .btn {
+    margin-left: 10px;
+  }
+
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
