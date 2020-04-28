@@ -1,0 +1,27 @@
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+@mixin media($size) {
+    @media(min-width: $size){
+       @content;
+
+        .centered {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        [class^=col]+[class^=col] {
+            margin-left: 10px;
+        }
+        
+        .btn+.btn {
+            margin-left: 10px;
+        }
+
+        .logo {
+            margin-left: initial;
+            margin-right: initial;
+        }
+    }
+}

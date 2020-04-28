@@ -5,29 +5,53 @@
 .btn {
     margin-top: 15px;
     width: 100%;
-    color: #fff;
+    color: $color-snow-white;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+
+    @include media($breakpoint-desktop) {
+        padding: 10px 30px;
+    }
 }
 
 .default {
-    background-color: #51ddfc;
+    background-color: $color-aqua-blue;
+
+    &:hover {
+        background-color: lighten($color-aqua-blue, 15%)
+    }
 }
 
 .error {
-    background-color: #e4757a;
+    background-color: $color-deep-blush;
+
+    &:hover {
+        background-color: lighten($color-deep-blush, 15%)
+    }
 }
 
 .info {
-    background-color: #927bc1;
+    background-color: $color-royal-purple;
+
+    &:hover {
+        background-color: lighten($color-royal-purple, 15%)
+    }
 }
 
 .success {
-    background-color: #63cc82;
+    background-color: $color-emerald-green;
+
+    &:hover {
+        background-color: lighten($color-emerald-green, 15%)
+    }
 }
 
 .warning {
-    background-color: #fd7856;
+    background-color: $color-apricot-coral;
+
+    &:hover {
+        background-color: lighten($color-apricot-coral, 15%)
+    }
 }

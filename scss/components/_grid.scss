@@ -4,12 +4,23 @@
 
 .container {
     padding: 0 10px;
+
+    @include media($breakpoint-desktop) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
+
+    @include media($breakpoint-desktop) {
+        flex-direction: row;
+    }
 }
 
 [class^=col] {
@@ -18,54 +29,109 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+
+    @include media($breakpoint-desktop) {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+    }
 }
 
 .theme.col-1 {
     background-color: $color-royal-purple;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 8.33%;
+    }
 }
 
 .theme.col-2 {
     background-color: $color-apricot-coral;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 16.67%;
+    }
 }
 
 .theme.col-3 {
     background-color: $color-french-lilac;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 25.00%;
+    }
 }
 
 .theme.col-4 {
     background-color: $color-malibu-blue;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 33.33%;
+    }
 }
 
 .theme.col-5 {
     background-color: $color-pastel-green;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 41.67%;
+    }
 }
 
 .theme.col-6 {
-    background-color: #4da2bb;
+    background-color: $color-fountain-blue;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 50.00%;
+    }
 }
 
 .theme.col-7 {
-    background-color: #ec9fa3;
+    background-color: $color-sea-pink;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 58.33%;
+    }
 }
 
 .theme.col-8 {
-    background-color: #fd9f85;
+    background-color: $color-vivid-orange;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 66.67%;
+    }
 }
 
 .theme.col-9 {
-    background-color: #e4757a;
+    background-color: $color-deep-blush;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 75.00%;
+    }
 }
 
 .theme.col-10 {
-    background-color: #63cc82;
+    background-color: $color-emerald-green;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 83.33%;
+    }
 }
 
 .theme.col-11 {
-    background-color: #51ddfc;
+    background-color: $color-aqua-blue;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 91.67%;
+    }
 }
 
 .theme.col-12 {
-    background-color: #80e8d1;
+    background-color: $color-mint-blue;
+
+    @include media($breakpoint-desktop) {
+        flex-basis: 100%;
+    }
 }
 
 .card {

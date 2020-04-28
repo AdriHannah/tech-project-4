@@ -5,6 +5,12 @@
 /* Utilities Imports */
 /* ============================================= */
 /* ============================================= */
+/*              Color Variables                  */
+/* ============================================= */
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+/* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
 /* ============================================= */
@@ -409,25 +415,60 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .btn .btn + .btn {
+    margin-left: 10px;
+  }
+  .btn .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
 
 .default {
   background-color: #51ddfc;
+}
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .error {
   background-color: #e4757a;
 }
+.error:hover {
+  background-color: #f1b5b8;
+}
 
 .info {
   background-color: #927bc1;
 }
+.info:hover {
+  background-color: #bdafd9;
+}
 
 .success {
-  background-color: #63cc82;
+  background-color: #63CC82;
+}
+.success:hover {
+  background-color: #9ddfb0;
 }
 
 .warning {
   background-color: #fd7856;
+}
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 /* ============================================= */
@@ -464,6 +505,28 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .nav .btn + .btn {
+    margin-left: 10px;
+  }
+  .nav .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -473,7 +536,26 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
+@media (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
+  .nav-link .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav-link [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .nav-link .btn + .btn {
+    margin-left: 10px;
+  }
+  .nav-link .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -513,11 +595,54 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .container .btn + .btn {
+    margin-left: 10px;
+  }
+  .container .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+  .row .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .row .btn + .btn {
+    margin-left: 10px;
+  }
+  .row .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }
 
 [class^=col] {
@@ -527,161 +652,320 @@ a {
   padding: 10px;
   border-radius: 5px;
 }
-
-.theme.col-1 {
-  background-color: #927bc1;
-}
-
-.theme.col-2 {
-  background-color: #fd7856;
-}
-
-.theme.col-3 {
-  background-color: #deb2ee;
-}
-
-.theme.col-4 {
-  background-color: #7ee6fd;
-}
-
-.theme.col-5 {
-  background-color: #88d9a0;
-}
-
-.theme.col-6 {
-  background-color: #4da2bb;
-}
-
-.theme.col-7 {
-  background-color: #ec9fa3;
-}
-
-.theme.col-8 {
-  background-color: #fd9f85;
-}
-
-.theme.col-9 {
-  background-color: #e4757a;
-}
-
-.theme.col-10 {
-  background-color: #63cc82;
-}
-
-.theme.col-11 {
-  background-color: #51ddfc;
-}
-
-.theme.col-12 {
-  background-color: #80e8d1;
-}
-
-.card {
-  flex-basis: 100%;
-}
-
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
   [class^=col] {
     display: flex;
     justify-content: center;
     margin-top: 0;
     align-items: center;
   }
-
-  [class^=col] + [class^=col] {
+  [class^=col] .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  [class^=col] [class^=col] + [class^=col] {
     margin-left: 10px;
   }
-
-  .col-1 {
-    flex-basis: 8.33%;
-  }
-
-  .col-2 {
-    flex-basis: 16.67%;
-  }
-
-  .col-3 {
-    flex-basis: 25%;
-  }
-
-  .col-4 {
-    flex-basis: 33.33%;
-  }
-
-  .col-5 {
-    flex-basis: 41.67%;
-  }
-
-  .col-6 {
-    flex-basis: 50%;
-  }
-
-  .col-7 {
-    flex-basis: 58.33%;
-  }
-
-  .col-8 {
-    flex-basis: 66.67%;
-  }
-
-  .col-9 {
-    flex-basis: 75%;
-  }
-
-  .col-10 {
-    flex-basis: 83.33%;
-  }
-
-  .col-11 {
-    flex-basis: 91.67%;
-  }
-
-  .col-12 {
-    flex-basis: 100%;
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
-  }
-
-  .btn {
-    padding: 10px 30px;
-  }
-
-  .btn + .btn {
+  [class^=col] .btn + .btn {
     margin-left: 10px;
   }
-
-  .logo {
+  [class^=col] .logo {
     margin-left: initial;
     margin-right: initial;
   }
+}
+
+.theme.col-1 {
+  background-color: #927bc1;
+}
+@media (min-width: 768px) {
+  .theme.col-1 {
+    flex-basis: 8.33%;
+  }
+  .theme.col-1 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-1 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-1 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-1 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-2 {
+  background-color: #fd7856;
+}
+@media (min-width: 768px) {
+  .theme.col-2 {
+    flex-basis: 16.67%;
+  }
+  .theme.col-2 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-2 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-2 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-2 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-3 {
+  background-color: #deb2ee;
+}
+@media (min-width: 768px) {
+  .theme.col-3 {
+    flex-basis: 25%;
+  }
+  .theme.col-3 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-3 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-3 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-3 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-4 {
+  background-color: #7ee6fd;
+}
+@media (min-width: 768px) {
+  .theme.col-4 {
+    flex-basis: 33.33%;
+  }
+  .theme.col-4 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-4 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-4 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-4 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-5 {
+  background-color: #88d9a0;
+}
+@media (min-width: 768px) {
+  .theme.col-5 {
+    flex-basis: 41.67%;
+  }
+  .theme.col-5 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-5 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-5 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-5 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-6 {
+  background-color: #4da2bb;
+}
+@media (min-width: 768px) {
+  .theme.col-6 {
+    flex-basis: 50%;
+  }
+  .theme.col-6 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-6 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-6 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-6 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-7 {
+  background-color: #ec9fa3;
+}
+@media (min-width: 768px) {
+  .theme.col-7 {
+    flex-basis: 58.33%;
+  }
+  .theme.col-7 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-7 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-7 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-7 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-8 {
+  background-color: #fd9f85;
+}
+@media (min-width: 768px) {
+  .theme.col-8 {
+    flex-basis: 66.67%;
+  }
+  .theme.col-8 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-8 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-8 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-8 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-9 {
+  background-color: #e4757a;
+}
+@media (min-width: 768px) {
+  .theme.col-9 {
+    flex-basis: 75%;
+  }
+  .theme.col-9 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-9 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-9 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-9 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-10 {
+  background-color: #63CC82;
+}
+@media (min-width: 768px) {
+  .theme.col-10 {
+    flex-basis: 83.33%;
+  }
+  .theme.col-10 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-10 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-10 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-10 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-11 {
+  background-color: #51ddfc;
+}
+@media (min-width: 768px) {
+  .theme.col-11 {
+    flex-basis: 91.67%;
+  }
+  .theme.col-11 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-11 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-11 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-11 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.theme.col-12 {
+  background-color: #80e8d1;
+}
+@media (min-width: 768px) {
+  .theme.col-12 {
+    flex-basis: 100%;
+  }
+  .theme.col-12 .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .theme.col-12 [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .theme.col-12 .btn + .btn {
+    margin-left: 10px;
+  }
+  .theme.col-12 .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
+}
+
+.card {
+  flex-basis: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
