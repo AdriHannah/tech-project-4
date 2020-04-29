@@ -38,6 +38,13 @@
     }
 }
 
+.theme.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 .theme.col-1 {
     background-color: $color-royal-purple;
 
@@ -139,11 +146,32 @@
 }
 
 @include media($breakpoint-desktop) {
+    .col-3 {
+        flex-basis: 25%;
+    }
+
     .col-4 {
         flex-basis: 33.33%;
     }
 
     .col-8 {
         flex-basis: 66.67%;
+    }
+
+    .col-9 {
+        flex-basis: 75.00%;
+    }
+
+    [class^=col]+[class^=col] {
+        margin-left: 10px;
+    }
+
+    .btn+.btn {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-left: initial;
+        margin-right: initial;
     }
 }

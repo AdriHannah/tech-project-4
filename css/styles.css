@@ -419,21 +419,6 @@ a {
   .btn {
     padding: 10px 30px;
   }
-  .btn .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .btn [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .btn .btn + .btn {
-    margin-left: 10px;
-  }
-  .btn .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .default {
@@ -511,21 +496,6 @@ a {
     justify-content: flex-end;
     align-items: center;
   }
-  .nav .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .nav .btn + .btn {
-    margin-left: 10px;
-  }
-  .nav .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .nav-link {
@@ -539,21 +509,6 @@ a {
 @media (min-width: 768px) {
   .nav-link {
     flex-basis: 100px;
-  }
-  .nav-link .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .nav-link [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .nav-link .btn + .btn {
-    margin-left: 10px;
-  }
-  .nav-link .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 .nav-link:hover {
@@ -602,21 +557,6 @@ a {
     margin-left: auto;
     margin-right: auto;
   }
-  .container .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .container [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .container .btn + .btn {
-    margin-left: 10px;
-  }
-  .container .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .row {
@@ -627,21 +567,6 @@ a {
 @media (min-width: 768px) {
   .row {
     flex-direction: row;
-  }
-  .row .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .row [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .row .btn + .btn {
-    margin-left: 10px;
-  }
-  .row .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -659,21 +584,13 @@ a {
     margin-top: 0;
     align-items: center;
   }
-  [class^=col] .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  [class^=col] [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  [class^=col] .btn + .btn {
-    margin-left: 10px;
-  }
-  [class^=col] .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
+}
+
+.theme.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .theme.col-1 {
@@ -682,21 +599,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-1 {
     flex-basis: 8.33%;
-  }
-  .theme.col-1 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-1 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-1 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-1 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -707,21 +609,6 @@ a {
   .theme.col-2 {
     flex-basis: 16.67%;
   }
-  .theme.col-2 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-2 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-2 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-2 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .theme.col-3 {
@@ -730,21 +617,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-3 {
     flex-basis: 25%;
-  }
-  .theme.col-3 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-3 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-3 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-3 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -755,21 +627,6 @@ a {
   .theme.col-4 {
     flex-basis: 33.33%;
   }
-  .theme.col-4 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-4 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-4 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-4 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .theme.col-5 {
@@ -778,21 +635,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-5 {
     flex-basis: 41.67%;
-  }
-  .theme.col-5 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-5 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-5 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-5 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -803,21 +645,6 @@ a {
   .theme.col-6 {
     flex-basis: 50%;
   }
-  .theme.col-6 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-6 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-6 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-6 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .theme.col-7 {
@@ -826,21 +653,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-7 {
     flex-basis: 58.33%;
-  }
-  .theme.col-7 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-7 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-7 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-7 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -851,21 +663,6 @@ a {
   .theme.col-8 {
     flex-basis: 66.67%;
   }
-  .theme.col-8 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-8 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-8 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-8 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .theme.col-9 {
@@ -874,21 +671,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-9 {
     flex-basis: 75%;
-  }
-  .theme.col-9 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-9 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-9 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-9 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -899,21 +681,6 @@ a {
   .theme.col-10 {
     flex-basis: 83.33%;
   }
-  .theme.col-10 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-10 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-10 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-10 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .theme.col-11 {
@@ -922,21 +689,6 @@ a {
 @media (min-width: 768px) {
   .theme.col-11 {
     flex-basis: 91.67%;
-  }
-  .theme.col-11 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-11 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-11 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-11 .logo {
-    margin-left: initial;
-    margin-right: initial;
   }
 }
 
@@ -947,21 +699,6 @@ a {
   .theme.col-12 {
     flex-basis: 100%;
   }
-  .theme.col-12 .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .theme.col-12 [class^=col] + [class^=col] {
-    margin-left: 10px;
-  }
-  .theme.col-12 .btn + .btn {
-    margin-left: 10px;
-  }
-  .theme.col-12 .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
 }
 
 .card {
@@ -969,6 +706,10 @@ a {
 }
 
 @media (min-width: 768px) {
+  .col-3 {
+    flex-basis: 25%;
+  }
+
   .col-4 {
     flex-basis: 33.33%;
   }
@@ -977,10 +718,8 @@ a {
     flex-basis: 66.67%;
   }
 
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .col-9 {
+    flex-basis: 75%;
   }
 
   [class^=col] + [class^=col] {
